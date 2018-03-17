@@ -26,6 +26,10 @@ WebUI.navigateToUrl('http://demoaut.katalon.com/')
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Make Appointment'))
 
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service (1)/input_username', 'bla'))
+WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service (1)/input_password', 'blub'))
+
 WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Login'))
 
 WebUI.closeBrowser()
